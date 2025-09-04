@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karigari AI - Empowering Local Artisans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h2>🎨 Karigari AI</h2>
+                </div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#story-generator">AI Tools</a>
+                    <a href="#success">Success Stories</a>
+                    <button class="btn btn--primary btn--sm">Get Started</button>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Empower Your Craft with AI</h1>
+                    <p class="hero-subtitle">Transform traditional artistry into global success with AI-powered storytelling, photography, and marketing tools designed for Indian artisans.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">68M+</span>
+                            <span class="stat-label">Indian Artisans</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$739.95B</span>
+                            <span class="stat-label">Global Market</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">300%</span>
+                            <span class="stat-label">Average Growth</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <button class="btn btn--primary btn--lg">Start Your Journey</button>
+                        <button class="btn btn--outline btn--lg">Watch Demo</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="craft-showcase">
+                        <div class="craft-card">🏺 Pottery</div>
+                        <div class="craft-card">🧶 Textiles</div>
+                        <div class="craft-card">💍 Jewelry</div>
+                        <div class="craft-card">🪵 Wood Carving</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Features -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI-Powered Tools for Modern Artisans</h2>
+                <p>Bridge traditional craftsmanship with digital success</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>AI Story Generator</h3>
+                    <p>Transform your craft heritage into compelling stories that connect with customers emotionally</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Smart Photography</h3>
+                    <p>Professional product photos with AI-powered editing and background enhancement</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Multi-language Support</h3>
+                    <p>Create content in Hindi, English, and regional languages with cultural context</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛍️</div>
+                    <h3>Global Marketplace</h3>
+                    <p>Reach international customers with integrated shipping and payment solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Story Generator -->
+    <section id="story-generator" class="story-generator-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Story Generator</h2>
+                <p>Let AI craft compelling narratives about your art and heritage</p>
+            </div>
+            <div class="story-generator">
+                <div class="generator-form">
+                    <div class="form-group">
+                        <label class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="artisan-name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Your Craft</label>
+                        <select class="form-control" id="craft-type">
+                            <option value="">Select your craft</option>
+                            <option value="Textiles & Handloom">Textiles & Handloom</option>
+                            <option value="Pottery & Ceramics">Pottery & Ceramics</option>
+                            <option value="Jewelry & Metalwork">Jewelry & Metalwork</option>
+                            <option value="Wood Carving">Wood Carving</option>
+                            <option value="Leather Goods">Leather Goods</option>
+                            <option value="Paper Crafts">Paper Crafts</option>
+                            <option value="Stone Carving">Stone Carving</option>
+                            <option value="Bamboo & Cane">Bamboo & Cane</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Your Location</label>
+                        <input type="text" class="form-control" id="location" placeholder="City, State">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Your Heritage & Story</label>
+                        <textarea class="form-control" id="heritage-story" rows="4" placeholder="Tell us about your family tradition, how long you've been practicing this craft, what inspires you..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Content Language</label>
+                        <select class="form-control" id="content-language">
+                            <option value="en">English 🇺🇸</option>
+                            <option value="hi">हिंदी 🇮🇳</option>
+                            <option value="bn">বাংলা 🇧🇩</option>
+                            <option value="te">తెలుగు 🇮🇳</option>
+                            <option value="ta">தமிழ் 🇮🇳</option>
+                            <option value="mr">मराठी 🇮🇳</option>
+                        </select>
+                    </div>
+                    <button class="btn btn--primary btn--full-width" id="generate-story">
+                        ✨ Generate AI Story
+                    </button>
+                </div>
+                <div class="generated-content" id="generated-content">
+                    <div class="content-tabs">
+                        <button class="tab-btn active" data-tab="social">Social Media Post</button>
+                        <button class="tab-btn" data-tab="product">Product Description</button>
+                        <button class="tab-btn" data-tab="brand">Brand Story</button>
+                    </div>
+                    <div class="tab-content active" id="social-content">
+                        <div class="content-preview">
+                            <h4>Social Media Post</h4>
+                            <div class="generated-text" id="social-text">Click "Generate AI Story" to create your content</div>
+                            <button class="btn btn--outline btn--sm copy-btn" data-target="social-text">Copy Text</button>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="product-content">
+                        <div class="content-preview">
+                            <h4>Product Description</h4>
+                            <div class="generated-text" id="product-text">Click "Generate AI Story" to create your content</div>
+                            <button class="btn btn--outline btn--sm copy-btn" data-target="product-text">Copy Text</button>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="brand-content">
+                        <div class="content-preview">
+                            <h4>Brand Story</h4>
+                            <div class="generated-text" id="brand-text">Click "Generate AI Story" to create your content</div>
+                            <button class="btn btn--outline btn--sm copy-btn" data-target="brand-text">Copy Text</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography Assistant -->
+    <section id="photography" class="photography-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Smart Photography Assistant</h2>
+                <p>Create stunning product photos with AI-powered guidance</p>
+            </div>
+            <div class="photography-tools">
+                <div class="tool-selector">
+                    <div class="craft-categories">
+                        <button class="category-btn active" data-category="textiles">🧶 Textiles</button>
+                        <button class="category-btn" data-category="pottery">🏺 Pottery</button>
+                        <button class="category-btn" data-category="jewelry">💍 Jewelry</button>
+                        <button class="category-btn" data-category="wood">🪵 Wood</button>
+                    </div>
+                </div>
+                <div class="photography-tips" id="photo-tips">
+                    <h3>Photography Tips for Textiles</h3>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <div class="tip-icon">☀️</div>
+                            <p>Use natural lighting near windows</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">🔍</div>
+                            <p>Show texture details with close-up shots</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">👤</div>
+                            <p>Display items being worn or used</p>
+                        </div>
+                        <div class="tip-card">
+                            <div class="tip-icon">📏</div>
+                            <p>Include scale references like hands</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-enhancement">
+                    <div class="enhancement-tools">
+                        <button class="btn btn--secondary">📸 Virtual Studio</button>
+                        <button class="btn btn--secondary">🎨 Background Remover</button>
+                        <button class="btn btn--secondary">✨ Auto Enhance</button>
+                        <button class="btn btn--secondary">📐 Crop & Resize</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section id="success" class="success-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Real artisans, real transformations</p>
+            </div>
+            <div class="success-stories">
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="artisan-info">
+                            <h3>Meera Devi</h3>
+                            <p>Phulkari Embroidery, Punjab</p>
+                        </div>
+                        <div class="achievement">300% ↗️</div>
+                    </div>
+                    <p class="story-text">"From selling in local markets to reaching customers in 15 countries. AI-generated stories helped me connect with people who truly appreciate handmade crafts."</p>
+                    <div class="story-metrics">
+                        <span class="metric">15 Countries</span>
+                        <span class="metric">300% Sales Growth</span>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="artisan-info">
+                            <h3>Ramesh Kumar</h3>
+                            <p>Blue Pottery, Rajasthan</p>
+                        </div>
+                        <div class="achievement">Global Brand</div>
+                    </div>
+                    <p class="story-text">"AI helped translate my cultural heritage into compelling marketing. Built global brand presence in just 6 months with authentic storytelling."</p>
+                    <div class="story-metrics">
+                        <span class="metric">6 Months</span>
+                        <span class="metric">Global Reach</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Dashboard Preview -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Digital Marketing Dashboard</h2>
+                <p>Track performance and grow your business</p>
+            </div>
+            <div class="dashboard-preview">
+                <div class="dashboard-cards">
+                    <div class="dashboard-card">
+                        <h4>Monthly Sales</h4>
+                        <div class="dashboard-metric">₹45,230</div>
+                        <div class="metric-change positive">+23% from last month</div>
+                    </div>
+                    <div class="dashboard-card">
+                        <h4>Global Reach</h4>
+                        <div class="dashboard-metric">12 Countries</div>
+                        <div class="metric-change positive">+3 new markets</div>
+                    </div>
+                    <div class="dashboard-card">
+                        <h4>Social Engagement</h4>
+                        <div class="dashboard-metric">2,847</div>
+                        <div class="metric-change positive">+45% this week</div>
+                    </div>
+                    <div class="dashboard-card">
+                        <h4>Customer Rating</h4>
+                        <div class="dashboard-metric">4.8/5 ⭐</div>
+                        <div class="metric-change neutral">128 reviews</div>
+                    </div>
+                </div>
+                <div class="social-scheduler">
+                    <h4>Automated Social Media</h4>
+                    <div class="scheduled-posts">
+                        <div class="post-item">
+                            <div class="post-platform">📘 Facebook</div>
+                            <div class="post-content">New Madhubani collection featuring...</div>
+                            <div class="post-time">Today, 2:00 PM</div>
+                        </div>
+                        <div class="post-item">
+                            <div class="post-platform">📷 Instagram</div>
+                            <div class="post-content">Behind the scenes: Traditional pottery wheel...</div>
+                            <div class="post-time">Today, 6:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Center -->
+    <section id="learning" class="learning-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Learning & Support Center</h2>
+                <p>Master digital skills with guided tutorials</p>
+            </div>
+            <div class="learning-content">
+                <div class="tutorial-categories">
+                    <div class="tutorial-card">
+                        <div class="tutorial-icon">🎓</div>
+                        <h3>Digital Literacy Basics</h3>
+                        <p>Learn essential digital skills for online selling</p>
+                        <button class="btn btn--outline btn--sm">Start Learning</button>
+                    </div>
+                    <div class="tutorial-card">
+                        <div class="tutorial-icon">📱</div>
+                        <h3>Social Media Marketing</h3>
+                        <p>Build your presence on Facebook, Instagram, and WhatsApp</p>
+                        <button class="btn btn--outline btn--sm">Start Learning</button>
+                    </div>
+                    <div class="tutorial-card">
+                        <div class="tutorial-icon">🌍</div>
+                        <h3>Global Selling</h3>
+                        <p>Export your crafts and reach international customers</p>
+                        <button class="btn btn--outline btn--sm">Start Learning</button>
+                    </div>
+                </div>
+                <div class="ai-chatbot">
+                    <div class="chatbot-header">
+                        <h4>🤖 AI Assistant - Available 24/7</h4>
+                        <p>Get instant help in your preferred language</p>
+                    </div>
+                    <div class="chat-window">
+                        <div class="chat-message bot">
+                            <div class="message-content">
+                                Hello! I'm here to help you with any questions about digital marketing, platform features, or growing your craft business. How can I assist you today?
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Type your question..." class="form-control">
+                            <button class="btn btn--primary btn--sm">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Craft into Global Success?</h2>
+                <p>Join thousands of artisans who have already discovered the power of AI-driven storytelling and marketing</p>
+                <div class="cta-actions">
+                    <button class="btn btn--primary btn--lg">Start Free Trial</button>
+                    <button class="btn btn--outline btn--lg">Schedule Demo</button>
+                </div>
+                <div class="cta-features">
+                    <span>✓ Free 30-day trial</span>
+                    <span>✓ No credit card required</span>
+                    <span>✓ Full feature access</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🎨 Karigari AI</h3>
+                    <p>Empowering traditional artisans with modern AI technology</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Platform</h4>
+                        <a href="#features">Features</a>
+                        <a href="#story-generator">AI Tools</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#support">Support</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="#learning">Learning Center</a>
+                        <a href="#tutorials">Tutorials</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#community">Community</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="#help">Help Center</a>
+                        <a href="#contact">Contact Us</a>
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Karigari AI. Proudly supporting Indian artisans worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
